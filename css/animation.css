@@ -122,9 +122,34 @@
 }
 
 @keyframes margineinterrottobottom{
-  0% {right: 10%;}
+  0% {right: 20%;}
   50% {right:calc(100% - 60px);}
-  100% {right: 10%;}
+  100% {right: 20%;}
 }
 
 /* esercizio 13 */
+.ex-13-button:hover .ex-13-top-white{
+  animation: marginecontinuotop 2s linear;
+}
+
+@keyframes marginecontinuotop{
+  0% {top: -10px; left: 10%;}
+  20% {top: -10px; left:calc(100% - 30px);}
+  40% {top: 60px; left:calc(100% - 30px);}
+  60% {top: 60px; left: -20px;}
+  90% {top: -10px; left: -20px;}
+  100% {top: -10px; left: 10%;}
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+  animation: marginecontinuobottom 2s linear;
+}
+
+@keyframes marginecontinuobottom{
+  0% {bottom: -10px; right: 20%;}
+  20% {bottom: -10px; right:calc(100% - 40px);}
+  40% {bottom: 60px; right:calc(100% - 40px);}
+  60% {bottom: 60px; right: -30px;}
+  90% {bottom: -10px; right: -30px;}
+  100% {bottom: -10px; right: 20%;}
+}
