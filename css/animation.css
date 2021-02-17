@@ -85,10 +85,46 @@
 /* esercizio 10 */
 .ex-10-icon{
   animation: caricamento 1s linear infinite;
-  /* animation-duration: 1s; */
 }
 
 @keyframes caricamento{
   0% {transform:rotate(0);}
   100% {transform:rotate(-1turn);}
 }
+
+/* esercizio 11 */
+.ex-11-icon:hover{
+  animation: caricamentointerrotto 2s linear;
+}
+
+@keyframes caricamentointerrotto{
+  0% {transform:rotate(0);}
+  90% {transform:rotate(0.9turn);}
+}
+
+/* esercizio 12 */
+.ex-12-button:hover .ex-12-top-white
+{
+  animation: margineinterrottotop 2s linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes margineinterrottotop{
+  0% {left: 10%;}
+  50% {left:calc(100% - 60px);}
+  100% {left: 10%;}
+}
+
+.ex-12-button:hover .ex-12-bottom-white
+{
+  animation: margineinterrottobottom 2s linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes margineinterrottobottom{
+  0% {right: 10%;}
+  50% {right:calc(100% - 60px);}
+  100% {right: 10%;}
+}
+
+/* esercizio 13 */
